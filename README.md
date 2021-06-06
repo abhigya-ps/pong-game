@@ -10,7 +10,7 @@ Program is split into three sections:
 Program is also divided into platform dependent layer and platform independent layers:
 - Platform dependent layer in this program contains code specific to the Windows platform layer.
   - Used the [WinMain](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-winmain) function which serves as the base for a graphical Windows-based application, fetched from Microsoft's [Win32 API](https://docs.microsoft.com/en-us/windows/win32/).
-- Platform independent layer deals with logical parts of the game (assets, physics, objects) not including graphics-rendering functions that interface with the OS.
+- Platform independent layer deals with logical parts of the game (assets, physics, objects), not including graphics-rendering functions that interface with the OS.
 
 <p align="center">
   <img src="/media/game-home.JPG" alt="home_menu" width="60%" align="center"> 

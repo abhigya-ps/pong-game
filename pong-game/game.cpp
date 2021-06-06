@@ -47,8 +47,8 @@ bool enemy_is_ai;
 
 internal void
 simulate_game(Input* input, float dt) {
-	draw_rect(0, 0, arena_half_size_x, arena_half_size_y, 0xffaa33);
-	draw_arena_borders(arena_half_size_x, arena_half_size_y, 0xff5500);
+	draw_rect(0, 0, arena_half_size_x, arena_half_size_y, 0x85C1E9);
+	draw_arena_borders(arena_half_size_x, arena_half_size_y, 0x283747);
 
 	if (current_gamemode == GM_GAMEPLAY) {  // Gamemode is Gameplay
 
@@ -124,8 +124,8 @@ simulate_game(Input* input, float dt) {
 		// Rendering ball and players
 		draw_rect(ball_p_x, ball_p_y, ball_half_size, ball_half_size, 0xffffff);
 
-		draw_rect(80, player_1_p, player_half_size_x, player_half_size_y, 0xff0000);
-		draw_rect(-80, player_2_p, player_half_size_x, player_half_size_y, 0xff0000);
+		draw_rect(80, player_1_p, player_half_size_x, player_half_size_y, 0x283747);
+		draw_rect(-80, player_2_p, player_half_size_x, player_half_size_y, 0x283747);
 
 	}
 	else {  // Gamemode is Menu
@@ -140,14 +140,14 @@ simulate_game(Input* input, float dt) {
 			enemy_is_ai = hot_button ? 0 : 1;
 		}
 		if (hot_button == 0) {
-			draw_text("SINGLE PLAYER", -80, -10, 1, 0xff0000);
-			draw_text("MULTIPLAYER", 20, -10, 1, 0xaaaaaa);
+			draw_text("SINGLE PLAYER", -80, -10, 1, 0xFF4F4F);
+			draw_text("MULTIPLAYER", 18, -10, 1, 0xaaaaaa);
 		}
 		else {
 			draw_text("SINGLE PLAYER", -80, -10, 1, 0xaaaaaa);
-			draw_text("MULTIPLAYER", 20, -10, 1, 0xff0000);
+			draw_text("MULTIPLAYER", 18, -10, 1, 0xFF4F4F);
 		}
 
-		draw_text("PONG GAME", -50, 40, 2, 0xffffff);
+		draw_text("PONG GAME", -38, 30, 1.5, 0xffffff);
 	}
 }

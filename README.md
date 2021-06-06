@@ -20,4 +20,4 @@ Program is also divided into platform dependent layer and platform independent l
   <img src="/media/game-snip.JPG" alt="game_play" width="60%" align="center">
  </p>
  
- [link to the original author](https://www.youtube.com/watch?v=luuyjjOxnUI&list=PL7Ej6SUky135IAAR3PFCFyiVwanauRqj3)
+ [link to the original author](https://danzaidan.itch.io/pong-learn-programming)

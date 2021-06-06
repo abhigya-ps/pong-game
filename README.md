@@ -7,7 +7,7 @@ Program is split into three sections:
 - Game Simulation - update gameplay with user input, ex. detect ball collision at borders, update score when the opposing player misses.
 - Ouput Rendering - display results of game simulation functions on a window built with base components upon execution of the program.
 
-Program is also divided into platform dependent layer and platform independent layers:
+Program is also divided into platform dependent layer and platform independent layer:
 - Platform dependent layer in this program contains code specific to the Windows platform layer.
   - Used the [WinMain](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-winmain) function which serves as the base for a graphical Windows-based application, fetched from Microsoft's [Win32 API](https://docs.microsoft.com/en-us/windows/win32/).
 - Platform independent layer deals with logical parts of the game (assets, physics, objects), not including graphics-rendering functions that interface with the OS.
